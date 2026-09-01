@@ -57,27 +57,6 @@ module "sharing" {
   recipient resource reports where it is in that handshake, so a fresh apply normally shows `associating`.
 
 <!-- BEGIN_TF_DOCS -->
-## Requirements
-
-| Name | Version |
-| ---- | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.12.0 |
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | ~> 5.24 |
-
-## Providers
-
-| Name | Version |
-| ---- | ------- |
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | ~> 5.24 |
-
-## Resources
-
-| Name | Type |
-| ---- | ---- |
-| [cloudflare_share.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/share) | resource |
-| [cloudflare_share_recipient.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/share_recipient) | resource |
-| [cloudflare_share_resource.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/share_resource) | resource |
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |

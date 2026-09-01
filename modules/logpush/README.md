@@ -92,27 +92,6 @@ The deprecated `frequency` and `logpull_options` attributes are deliberately not
 `max_upload_interval_seconds`, `max_upload_records` and `output_options` instead.
 
 <!-- BEGIN_TF_DOCS -->
-## Requirements
-
-| Name | Version |
-| ---- | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.12.0 |
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | ~> 5.24 |
-
-## Providers
-
-| Name | Version |
-| ---- | ------- |
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | ~> 5.24 |
-
-## Resources
-
-| Name | Type |
-| ---- | ---- |
-| [cloudflare_logpull_retention.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/logpull_retention) | resource |
-| [cloudflare_logpush_job.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/logpush_job) | resource |
-| [cloudflare_logpush_ownership_challenge.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/logpush_ownership_challenge) | resource |
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |

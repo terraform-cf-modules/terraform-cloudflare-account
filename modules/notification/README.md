@@ -53,26 +53,6 @@ module "notification" {
   a bump of the provider constraint may be needed before a new one can be used.
 
 <!-- BEGIN_TF_DOCS -->
-## Requirements
-
-| Name | Version |
-| ---- | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.12.0 |
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | ~> 5.24 |
-
-## Providers
-
-| Name | Version |
-| ---- | ------- |
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | ~> 5.24 |
-
-## Resources
-
-| Name | Type |
-| ---- | ---- |
-| [cloudflare_notification_policy.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/notification_policy) | resource |
-| [cloudflare_notification_policy_webhooks.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/notification_policy_webhooks) | resource |
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |

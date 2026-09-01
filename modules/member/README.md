@@ -68,27 +68,6 @@ module "member" {
   dependency for you.
 
 <!-- BEGIN_TF_DOCS -->
-## Requirements
-
-| Name | Version |
-| ---- | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.12.0 |
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | ~> 5.24 |
-
-## Providers
-
-| Name | Version |
-| ---- | ------- |
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | ~> 5.24 |
-
-## Resources
-
-| Name | Type |
-| ---- | ---- |
-| [cloudflare_account_member.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/account_member) | resource |
-| [cloudflare_user_group.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/user_group) | resource |
-| [cloudflare_user_group_members.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/user_group_members) | resource |
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
