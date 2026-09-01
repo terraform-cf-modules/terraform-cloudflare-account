@@ -1,0 +1,33 @@
+name: Test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    name: terraform test (mocked)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_wrapper: false
+
+      - name: Init
+        run: terraform init -backend=false -input=false
+
+      # Only the mocked files. tests/integration.tftest.hcl is command = apply and
+      # needs real credentials, so it runs from integration.yml on a schedule.
+      - name: Run tests
+        run: |
+          terraform test \
+            -filter=tests/defaults.tftest.hcl \
+            -filter=tests/validations.tftest.hcl \
+            -verbose
