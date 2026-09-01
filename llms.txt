@@ -1,0 +1,41 @@
+# Terraform Cloudflare Account
+
+> Account bootstrap, members and groups, API tokens, notifications, Logpush, and secrets store.
+
+Terraform module for Cloudflare, maintained by CloudDrove. Source: `terraform-cf-modules/account/cloudflare`. Repository: https://github.com/terraform-cf-modules/terraform-cloudflare-account
+
+Requires Terraform >= 1.12.0 (or OpenTofu >= 1.12) and the `cloudflare/cloudflare` provider ~> 5.24. Provider v5 renamed most resources from v4, so verify resource names against the current provider docs rather than older examples.
+
+## Usage
+
+```hcl
+module "this" {
+  source  = "terraform-cf-modules/account/cloudflare"
+  version = "~> 0.1"
+}
+```
+
+## Submodules
+
+Each is separately addressable with the double slash source syntax.
+
+- [api-token](https://github.com/terraform-cf-modules/terraform-cloudflare-account/tree/main/modules/api-token): `terraform-cf-modules/account/cloudflare//modules/api-token`
+- [dns-settings](https://github.com/terraform-cf-modules/terraform-cloudflare-account/tree/main/modules/dns-settings): `terraform-cf-modules/account/cloudflare//modules/dns-settings`
+- [logpush](https://github.com/terraform-cf-modules/terraform-cloudflare-account/tree/main/modules/logpush): `terraform-cf-modules/account/cloudflare//modules/logpush`
+- [member](https://github.com/terraform-cf-modules/terraform-cloudflare-account/tree/main/modules/member): `terraform-cf-modules/account/cloudflare//modules/member`
+- [notification](https://github.com/terraform-cf-modules/terraform-cloudflare-account/tree/main/modules/notification): `terraform-cf-modules/account/cloudflare//modules/notification`
+- [secrets-store](https://github.com/terraform-cf-modules/terraform-cloudflare-account/tree/main/modules/secrets-store): `terraform-cf-modules/account/cloudflare//modules/secrets-store`
+- [sharing](https://github.com/terraform-cf-modules/terraform-cloudflare-account/tree/main/modules/sharing): `terraform-cf-modules/account/cloudflare//modules/sharing`
+
+## Documentation
+
+- [README](https://github.com/terraform-cf-modules/terraform-cloudflare-account/blob/main/README.md): overview and usage
+- [Inputs and outputs](https://github.com/terraform-cf-modules/terraform-cloudflare-account/blob/main/docs/io.md): every variable and output
+- [Examples](https://github.com/terraform-cf-modules/terraform-cloudflare-account/tree/main/examples): runnable configurations
+- [Architecture](https://github.com/terraform-cf-modules/terraform-cloudflare-account/blob/main/docs/architecture.md): resource map and provider quirks
+
+## Related
+
+- [All CloudDrove modules](https://github.com/clouddrove/toc): every module and submodule across AWS, Azure, Google Cloud, DigitalOcean, Hetzner Cloud and Cloudflare
+- [Organisation](https://github.com/terraform-cf-modules): the Cloudflare module family
+- [Terraform Registry](https://registry.terraform.io/namespaces/terraform-cf-modules)
